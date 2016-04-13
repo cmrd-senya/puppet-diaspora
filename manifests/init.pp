@@ -19,6 +19,7 @@ class diaspora (
   $sidekiq_retry       = 10,
   $sidekiq_namespace   = 'diaspora',
   $enable_captcha      = true,
+  $allow_username_change = false,
 ) {
 
   class { 'diaspora::dependencies':
