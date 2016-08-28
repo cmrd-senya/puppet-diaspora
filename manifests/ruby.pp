@@ -2,11 +2,11 @@ class diaspora::ruby (
   $system_user    = 'diaspora',
   $rvm_key_server = 'pgp.mit.edu',
   $rvm_version    = '1.26.11',
-  $ruby_version   = '2.1.5',
+  $ruby_version   = '2.3.1',
 ) {
 
   $gemset              = 'diaspora'
-  $ruby_system_version = '2.1.5'
+  $ruby_system_version = '2.3.1'
 
   class { 'rvm':
     version    => $rvm_version,
